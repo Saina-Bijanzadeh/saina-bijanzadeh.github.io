@@ -1,82 +1,36 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    color: black;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff; /* White background */
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-h1, h2, h3, h4 {
-    color: #004d00; /* Deep green */
-    margin: 0;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-/* Layout Styles */
-.container {
-    width: 80%;
-    margin: auto;
     padding: 20px;
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 20px;
+h1 {
+    color: #004d00; /* Deep green */
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.section {
-    margin-bottom: 40px;
+h2 {
+    color: #004d00; /* Deep green */
+    font-size: 2em;
+    margin-top: 20px;
 }
 
-/* Education, Experience, and Skills Sections */
-.education, .experience, .skills, .languages, .certificates, .awards {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+h3 {
+    color: #004d00; /* Deep green */
+    font-size: 1.5em;
+    margin-top: 15px;
 }
 
-.education h3, .experience h3, .skills h3, .languages h3, .certificates h3, .awards h3 {
+p {
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+header, footer {
     border-bottom: 2px solid #004d00; /* Deep green */
-    padding-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Contact Information */
-.contact-info {
-    text-align: center;
     margin-bottom: 20px;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: gray;
+    padding-bottom: 10px;
 }
