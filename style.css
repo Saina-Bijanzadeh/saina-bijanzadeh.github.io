@@ -3,13 +3,20 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
 }
 
 header {
     background: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -23,18 +30,25 @@ nav ul li {
 }
 
 nav a {
-    color: #4CAF50;
+    color: white;
     text-decoration: none;
 }
 
 section {
     padding: 20px;
     margin: 20px;
+    background: white; /* White background for content sections */
     border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+h2 {
+    color: #4CAF50; /* Header color matching the main theme */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: #f4f4f4;
+    border-top: 1px solid #ddd; /* Subtle line above footer */
 }
