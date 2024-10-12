@@ -1,54 +1,45 @@
+/* styles.css */
+
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px;
+    background-color: white;
+    color: #333;
 }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
     padding: 20px;
-    margin: 20px;
-    background: white; /* White background for content sections */
-    border: 1px solid #ddd;
-    border-radius: 5px; /* Rounded corners for a softer look */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #4CAF50; /* Header color matching the main theme */
-}
-
-footer {
+/* Header */
+header {
     text-align: center;
-    padding: 10px 0;
-    background: #f4f4f4;
-    border-top: 1px solid #ddd; /* Subtle line above footer */
+    margin-bottom: 30px;
 }
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #004d00; /* Deep green */
+}
+
+.contact-info {
+    font-size: 0.9em;
+    color: #666; /* Gray for contact info */
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #004d00; /* Deep green
