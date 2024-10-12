@@ -1,45 +1,82 @@
-/* styles.css */
-
-/* General styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 40px;
+    font-family: 'Arial', sans-serif;
     background-color: white;
-    color: #333;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 30px;
+h1, h2, h3, h4 {
+    color: #004d00; /* Deep green */
+    margin: 0;
 }
 
 h1 {
     font-size: 2.5em;
-    margin-bottom: 5px;
-    color: #004d00; /* Deep green */
 }
 
-.contact-info {
-    font-size: 0.9em;
-    color: #666; /* Gray for contact info */
+h2 {
+    font-size: 2em;
 }
 
-/* Section styles */
-.section {
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+/* Layout Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.section-title {
-    font-size: 1.5em;
-    color: #004d00; /* Deep green
+.section {
+    margin-bottom: 40px;
+}
+
+/* Education, Experience, and Skills Sections */
+.education, .experience, .skills, .languages, .certificates, .awards {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.education h3, .experience h3, .skills h3, .languages h3, .certificates h3, .awards h3 {
+    border-bottom: 2px solid #004d00; /* Deep green */
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Contact Information */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: gray;
+}
