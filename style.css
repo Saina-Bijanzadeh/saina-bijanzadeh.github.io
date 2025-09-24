@@ -9,15 +9,10 @@ body {
     /* Background image */
     background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
     background-size: cover;
-
-    /* Optional overlay effect using a semi-transparent layer */
     position: relative;
 }
-body, h1, h2, p, li {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
 
-/* Create a subtle light overlay to improve text readability */
+/* Light overlay to improve readability */
 body::after {
     content: "";
     position: fixed;
@@ -25,13 +20,13 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* white overlay, adjust opacity */
-    pointer-events: none; /* allows interaction with content */
+    background-color: rgba(255, 255, 255, 0.85); /* stronger white overlay for readability */
+    pointer-events: none; 
     z-index: 0;
 }
 
 /* Ensure content sits above the overlay */
-main, header, footer, .card, section {
+header, main, footer, section, .card {
     position: relative;
     z-index: 1;
 }
@@ -47,6 +42,7 @@ header {
 header h1 {
     margin: 0.2rem 0;
     font-size: 2.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* subtle text shadow */
 }
 
 header a {
@@ -56,4 +52,47 @@ header a {
 
 header .research-interests {
     font-style: italic;
-    margin-top
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Main content styling */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    color: #2575fc;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 0.3rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.card {
+    background: white;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+    margin: 0.5rem 0 0 1.2rem;
+}
+
+/* Text readability for all paragraphs and list items */
+p, li {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2575fc;
+    color: white;
+    margin-top: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
