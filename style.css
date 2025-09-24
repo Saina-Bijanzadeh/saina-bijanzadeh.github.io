@@ -5,58 +5,23 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    position: relative; /* Needed for the overlay */
+}
+
+/* Background image with light overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://openart.ai/share/VU9KSlpUUWZpSjk4WGJuSW43SDI7aHR0cHM6Ly9jZG4ub3BlbmFydC5haS91cGxvYWRzL2ltYWdlXzZqR3Yzb3hDXzE3NTg3MDIyODY0NTFfNTEyLndlYnA') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; /* Adjust opacity to make it subtle */
+    z-index: -1; /* Behind all content */
 }
 
 header {
     background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-header h1 {
-    margin: 0.2rem 0;
-    font-size: 2.2rem;
-}
-
-header a {
-    color: #ffe;
-    text-decoration: underline;
-}
-
-header .research-interests {
-    font-style: italic;
-    margin-top: 0.5rem;
-}
-
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-h2 {
-    color: #2575fc;
-    border-bottom: 2px solid #2575fc;
-    padding-bottom: 0.3rem;
-}
-
-.card {
-    background: white;
-    padding: 1rem 1.5rem;
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-ul {
-    margin: 0.5rem 0 0 1.2rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #2575fc;
-    color: white;
-    margin-top: 2rem;
-}
+    colo
