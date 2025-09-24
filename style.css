@@ -1,4 +1,3 @@
-/* Apply a fixed background image */
 body {
     background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -10,7 +9,6 @@ body {
     position: relative;
 }
 
-/* Semi-transparent overlay for subtlety */
 body::after {
     content: "";
     position: fixed;
@@ -18,12 +16,11 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.2); /* much more subtle */
+    background-color: rgba(255,255,255,0.2); /* subtle overlay */
     pointer-events: none;
-    z-index: -1; /* behind everything */
+    z-index: -1;
 }
 
-/* Ensure content is above the overlay */
 .content-wrapper {
     position: relative;
     z-index: 1;
