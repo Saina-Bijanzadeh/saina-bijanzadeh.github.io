@@ -1,45 +1,110 @@
-/* Body and background */
+/* --- Body and Background --- */
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
-    margin: 0;
-    padding: 0;
-    position: relative;
-
-    /* Background image */
     background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
     background-size: cover;
+    position: relative;
 }
 
-/* Subtle overlay for readability */
-body::before {
+/* Overlay for subtle background */
+body::after {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,0.92); /* white overlay, high opacity makes text readable */
-    pointer-events: none; 
+    background-color: rgba(255, 255, 255, 0.92); /* increase for more subtle image */
+    pointer-events: none;
     z-index: 0;
 }
 
-/* Ensure content is above overlay */
-header, main, footer, section, .card {
+/* Wrapper for content above overlay */
+.content-wrapper {
     position: relative;
     z-index: 1;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
 }
 
-/* Optional: subtle text shadow to improve readability */
-h1, h2, p, li {
-    text-shadow: 0.8px 0.8px 2px rgba(0,0,0,0.2);
-}
-
-/* Header styling */
+/* --- Header --- */
 header {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
     text-align: center;
     padding: 2rem 1rem;
+    border-radius: 12px;
+}
+
+header h1 {
+    margin: 0.2rem 0;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+header .research-interests {
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* --- Main Content --- */
+main {
+    padding: 2rem 0;
+}
+
+/* Card style for each section */
+.card {
+    background: rgba(255,255,255,0.9); /* slightly transparent for elegance */
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2575fc;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Lists */
+ul, p {
+    margin: 0.3rem 0 0.3rem 1.2rem;
+}
+
+/* Text subtle shadow for better readability */
+h1, h2, h3, p, li {
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2575fc;
+    color: white;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+/* --- Links --- */
+a {
+    color: #2575fc;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
 }
