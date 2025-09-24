@@ -16,7 +16,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://github.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center;
+    background: url('https://openart.ai/share/VU9KSlpUUWZpSjk4WGJuSW43SDI7aHR0cHM6Ly9jZG4ub3BlbmFydC5haS91cGxvYWRzL2ltYWdlXzZqR3Yzb3hDXzE3NTg3MDIyODY0NTFfNTEyLndlYnA') no-repeat center center;
     background-size: cover;
     opacity: 0.2; /* adjust opacity for subtlety */
     z-index: -1; /* behind all content */
