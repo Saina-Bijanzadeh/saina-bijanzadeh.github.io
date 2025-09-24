@@ -18,7 +18,7 @@ body::before {
     height: 100%;
     background: url('openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center;
     background-size: cover;
-    opacity: 0.2; /* Adjust opacity to make it subtle */
+    opacity: 1; /* Adjust opacity to make it subtle */
     z-index: -1; /* Behind all content */
 }
 
