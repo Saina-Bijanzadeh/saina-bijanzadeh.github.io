@@ -1,16 +1,16 @@
-/* --- Body and Background --- */
+/* Apply a fixed background image */
 body {
+    background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
-    background-size: cover;
     position: relative;
 }
 
-/* Overlay for subtle background */
+/* Add a semi-transparent overlay to the body */
 body::after {
     content: "";
     position: fixed;
@@ -18,12 +18,12 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.92); /* increase for more subtle image */
+    background-color: rgba(255, 255, 255, 0.85); /* Adjust opacity for subtlety */
     pointer-events: none;
     z-index: 0;
 }
 
-/* Wrapper for content above overlay */
+/* Ensure content is above the overlay */
 .content-wrapper {
     position: relative;
     z-index: 1;
@@ -32,7 +32,7 @@ body::after {
     padding: 1rem 2rem;
 }
 
-/* --- Header --- */
+/* Style header */
 header {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
@@ -53,14 +53,14 @@ header .research-interests {
     font-size: 0.95rem;
 }
 
-/* --- Main Content --- */
+/* Style main content */
 main {
     padding: 2rem 0;
 }
 
 /* Card style for each section */
 .card {
-    background: rgba(255,255,255,0.9); /* slightly transparent for elegance */
+    background: rgba(255,255,255,0.9); /* Slightly transparent for elegance */
     padding: 1.5rem 2rem;
     margin: 1.5rem 0;
     border-radius: 12px;
@@ -89,7 +89,7 @@ h1, h2, h3, p, li {
     text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
 }
 
-/* --- Footer --- */
+/* Style footer */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -99,7 +99,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* --- Links --- */
+/* Style links */
 a {
     color: #2575fc;
     text-decoration: underline;
