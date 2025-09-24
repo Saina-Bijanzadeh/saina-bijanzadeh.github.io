@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+this was the original before you changed it: i dont know how to wrap the html content in the index part do it for me. this is the index code: <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -19,27 +19,19 @@ body {
 a { color: #2575fc; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* Wrapper */
-.content-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
 /* Header */
 header {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
     text-align: center;
     padding: 2rem 1rem;
-    border-radius: 12px;
 }
 header h1 { margin: 0.2rem 0; font-size: 2.2rem; }
 header p { margin: 0.2rem 0; }
 header .research-interests { font-style: italic; margin-top: 0.5rem; }
 
 /* Main */
-main { margin: 2rem 0; }
+main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
 h2 { color: #2575fc; border-bottom: 2px solid #2575fc; padding-bottom: 0.3rem; margin-top: 2rem; }
 .card { background: white; padding: 1rem 1.5rem; margin: 1rem 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
@@ -49,49 +41,183 @@ h2 { color: #2575fc; border-bottom: 2px solid #2575fc; padding-bottom: 0.3rem; m
 .content { padding: 0 1rem; display: none; overflow: hidden; background-color: #f9f9f9; }
 
 /* Footer */
-footer { text-align: center; padding: 1rem; background-color: #2575fc; color: white; border-radius: 12px; margin: 2rem 0; }
+footer { text-align: center; padding: 1rem; background-color: #2575fc; color: white; margin-top: 2rem; }
 </style>
 </head>
 <body>
+<header>
+    <h1>Saina Bijanzadeh</h1>
+    <p>Email: <a href="mailto:bijanzadehsaina@gmail.com">bijanzadehsaina@gmail.com</a> | Phone: +989394133378 | <a href="#">LinkedIn</a> | <a href="#">ResearchGate</a></p>
+    <p class="research-interests">Biomedical Signals & AI • Nanoparticle-Based Drug Delivery • Neuroinflammation & Neurodegenerative Therapeutics • Nose-to-Brain Delivery & BBB Permeability • Wearable Biosensors • Personalized Nanomedicine</p>
+</header>
 
-<div class="content-wrapper">
-  <header>
-      <h1>Saina Bijanzadeh</h1>
-      <p>Email: <a href="mailto:bijanzadehsaina@gmail.com">bijanzadehsaina@gmail.com</a> | Phone: +989394133378 | <a href="#">LinkedIn</a> | <a href="#">ResearchGate</a></p>
-      <p class="research-interests">Biomedical Signals & AI • Nanoparticle-Based Drug Delivery • Neuroinflammation & Neurodegenerative Therapeutics • Nose-to-Brain Delivery & BBB Permeability • Wearable Biosensors • Personalized Nanomedicine</p>
-  </header>
+<main>
+<!-- Education -->
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<h3>M.Sc., Inorganic Chemistry</h3>
+<p>University of Tehran, Iran — Oct 2021 – Feb 2024</p>
+<p><strong>GPA:</strong> 17.68/20 (3.54/4.0) | <strong>Thesis Grade:</strong> 20/20</p>
+<p><strong>Thesis:</strong> Design, Synthesis, and Characterization of Ceria Nanoparticles for Drug Delivery in Neurodegenerative Diseases</p>
+</div>
+<div class="card">
+<h3>B.Sc., Pure Chemistry</h3>
+<p>University of Tehran, Iran — Oct 2017 – Sept 2021</p>
+<p><strong>GPA:</strong> 16.4/20 (3.28/4.0)</p>
+<p><strong>Project:</strong> Metallic Chelating Ligands & MOFs for Parkinson’s Disease</p>
+</div>
+</section>
 
-  <main>
-    <!-- ✅ All your sections stay the same -->
-    <!-- Education -->
-    <section id="education"> ... </section>
+<!-- Research Experience -->
+<section id="research">
+<h2>Research Experience</h2>
+<div class="card">
+<h3>Research Assistant — University of Tehran</h3>
+<p>Oct 2021 – Present</p>
+<ul>
+<li>Developed chitosan-coated nanoceria for controlled drug release of levodopa for Parkinson’s Disease.</li>
+<li>Developed a chitosan-sandwiched nanoceria carrier to protect levodopa from oxidation.</li>
+<li>Collaborating internationally on MOFs for advanced drug carriers (China & UCLA).</li>
+<li>Synthesis and nanonization of copper-based coordination complexes with antimicrobial/anticancer activity.</li>
+<li>Synthesis and loading of MIL-100 MOFs for antibacterial and drug delivery purposes.</li>
+</ul>
+</div>
 
-    <!-- Research Experience -->
-    <section id="research"> ... </section>
+<div class="card">
+<h3>Independent Research Projects — Tehran, Iran</h3>
+<p>Oct 2024 – Present</p>
+<ul>
+<li>AI-driven optimization of chitosan-coated nanoceria for Parkinson’s therapy (sole author; preprint in preparation).</li>
+<li>Computational project linking EEG-based neuroinflammation to nanoparticle therapy (co-author; preprint in preparation).</li>
+</ul>
+</div>
 
-    <!-- Publications -->
-    <section id="publications"> ... </section>
+<div class="card">
+<h3>Research Intern — Parkinson’s Ligand Project</h3>
+<p>Feb 2020 – Sept 2020</p>
+<ul>
+<li>Designed chelating ligands targeting neuro-protective metal ion scavenging.</li>
+</ul>
+</div>
 
-    <!-- Skills -->
-    <section id="skills"> ... </section>
+<div class="card">
+<h3>Teaching Assistant — University of Tehran</h3>
+<p>Mar 2022 – Jan 2024</p>
+<ul>
+<li>Supervised General Chemistry 1 lab and Safety in Laboratory courses.</li>
+<li>Assisted grading and facilitated learning for biology and chemistry undergraduates.</li>
+</ul>
+</div>
 
-    <!-- Languages -->
-    <section id="languages"> ... </section>
+<div class="card">
+<h3>Private Chemistry Tutor (Independent)</h3>
+<p>May 2020 – June 2021</p>
+<ul>
+<li>Provided personalized tutoring in biophysical, organic, and general chemistry courses.</li>
+</ul>
+</div>
 
-    <!-- Honors & Awards -->
-    <section id="honors"> ... </section>
+<div class="card">
+<h3>UV-Vis Technician (Part-time) — University of Tehran</h3>
+<p>Sept 2023 – Oct 2024</p>
+<ul>
+<li>Supported drug release analyses with over 100 UV-Vis assays.</li>
+</ul>
+</div>
+</section>
 
-    <!-- Certifications -->
-    <section id="certifications"> ... </section>
+<!-- Publications -->
+<section id="publications">
+<h2>Publications (In Preparation)</h2>
+<ul>
+<li>First Author – Design, Synthesis, and Characterization of Ceria Nanoparticles for Drug Delivery in Neurodegenerative Diseases.</li>
+<li>First Author – Review on Nose-to-Brain Drug Delivery of Levodopa for Parkinson’s Disease.</li>
+<li>Sole Author – AI-Driven Optimization of Chitosan-Coated Nanoceria for Parkinson’s Disease Therapy.</li>
+<li>Co-Author – EEG & Nanoparticle Therapy Framework linking neural signals to personalized nanomedicine.</li>
+</ul>
+</section>
 
-    <!-- Additional Experience -->
-    <section id="additional"> ... </section>
-  </main>
+<!-- Skills -->
+<section id="skills">
+<h2>Skills</h2>
+<ul>
+<li><strong>Research & Technical:</strong> Nanoparticle synthesis, drug delivery systems, UV-Vis, FT-IR, PXRD, TEM, SEM, DLS, bioinorganic chemistry, wet-lab techniques</li>
+<li><strong>Programming:</strong> Python (AI & data analysis), C++, ChemDraw, Origin</li>
+<li><strong>Design & Visualization:</strong> Illustrator, Photoshop, Premiere Pro, Capcut, BioRender, Figma</li>
+<li><strong>Communication:</strong> Scientific writing, project coordination, presentations, academic translation</li>
+<li><strong>Leadership & Teamwork:</strong> Co-founder of Sanaience, project management, interdisciplinary collaboration</li>
+</ul>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Saina Bijanzadeh</p>
-  </footer>
-</div> <!-- ✅ closes wrapper -->
+<!-- Languages -->
+<section id="languages">
+<h2>Languages</h2>
+<button class="collapsible">Show/Hide Languages</button>
+<div class="content">
+<ul>
+<li>Persian, Azerbaijani: Native</li>
+<li>English: C2 – Advanced/Fluent</li>
+<li>Arabic, French, Korean: A2 – Upper Elementary</li>
+<li>Basic knowledge: Chinese, Dutch, German, Greek, Hindi, Irish, Italian, Japanese, Latin, Portuguese, Russian, Spanish, Swedish</li>
+</ul>
+</div>
+</section>
+
+<!-- Honors & Awards -->
+<section id="honors">
+<h2>Honors & Awards</h2>
+<button class="collapsible">Show/Hide Honors & Awards</button>
+<div class="content">
+<ul>
+<li>1st in Applied & Nano-chemistry, 2nd in Organic & Inorganic Chemistry, National M.Sc. Entrance Exam, 2021</li>
+<li>Advanced to second round, National Chemistry Olympiad for University Students, 2021</li>
+<li>Top 15% of graduating class, B.Sc. Chemistry, University of Tehran</li>
+</ul>
+</div>
+</section>
+
+<!-- Standardized Tests & Certifications -->
+<section id="certifications">
+<h2>Standardized Tests & Certifications</h2>
+<button class="collapsible">Show/Hide Details</button>
+<div class="content">
+<ul>
+<li>TOEFL iBT: 104/120 (Sept 2024 – Sept 2026)</li>
+<li>TOLIMO: 543/677 (Nov 2023 – Nov 2025)</li>
+<li>Coursera: Writing in English at University (Aug 2024)</li>
+<li>CS50 AI with Python – Edx (Jan 2023)</li>
+<li>X-Ray Diffraction – University of Tehran (Sept 2021)</li>
+<li>3D Printer Design & Manufacture – Tarbiat Modarres University (Nov 2020)</li>
+<li>Effective Figures for Review Articles – Elsevier (Oct 2020)</li>
+</ul>
+</div>
+</section>
+
+<!-- Additional Experience -->
+<section id="additional">
+<h2>Additional Experience</h2>
+<div class="card">
+<h3>Co-Founder, Sanaience</h3>
+<p>Jan 2021–Present</p>
+<ul>
+<li>Scientific cosmetic products and educational content; over 1M views on YouTube.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Translator, Young Scholars Club</h3>
+<p>Feb 2020–Oct 2022</p>
+<ul>
+<li>Translated International Chemistry Olympiad questions (Korean & English to Persian).</li>
+</ul>
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2025 Saina Bijanzadeh</p>
+</footer>
 
 <script>
 // Collapsible sections
@@ -105,6 +231,5 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
 </body>
 </html>
