@@ -1,30 +1,34 @@
+/* Body with background image */
 body {
-    background: url('images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
-body::after {
+/* Background image via a full-screen fixed pseudo-element */
+body::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,0.2); /* subtle overlay */
-    pointer-events: none;
-    z-index: -1;
+    background: url('images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; /* adjust opacity for subtlety */
+    z-index: -1; /* behind all content */
 }
 
+/* Content wrapper above background */
 .content-wrapper {
     position: relative;
     z-index: 1;
     max-width: 900px;
     margin: 2rem auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.85); /* optional: soft card-like look for readability */
+    border-radius: 12px;
 }
