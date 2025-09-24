@@ -1,6 +1,6 @@
 /* Apply a fixed background image */
 body {
-    background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') 
+    background: url('https://raw.githubusercontent.com/Saina-Bijanzadeh/saina-bijanzadeh.github.io/main/images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 
-/* Add a semi-transparent overlay to the body */
+/* Semi-transparent overlay for subtlety */
 body::after {
     content: "";
     position: fixed;
@@ -18,9 +18,9 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.85); /* Adjust opacity for subtlety */
+    background-color: rgba(255, 255, 255, 0.2); /* much more subtle */
     pointer-events: none;
-    z-index: 0;
+    z-index: -1; /* behind everything */
 }
 
 /* Ensure content is above the overlay */
@@ -30,81 +30,4 @@ body::after {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1rem 2rem;
-}
-
-/* Style header */
-header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-radius: 12px;
-}
-
-header h1 {
-    margin: 0.2rem 0;
-    font-size: 2.2rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-
-header .research-interests {
-    font-style: italic;
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-}
-
-/* Style main content */
-main {
-    padding: 2rem 0;
-}
-
-/* Card style for each section */
-.card {
-    background: rgba(255,255,255,0.9); /* Slightly transparent for elegance */
-    padding: 1.5rem 2rem;
-    margin: 1.5rem 0;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: #2575fc;
-    border-bottom: 2px solid #2575fc;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    margin-top: 0.8rem;
-    margin-bottom: 0.3rem;
-}
-
-/* Lists */
-ul, p {
-    margin: 0.3rem 0 0.3rem 1.2rem;
-}
-
-/* Text subtle shadow for better readability */
-h1, h2, h3, p, li {
-    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
-}
-
-/* Style footer */
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #2575fc;
-    color: white;
-    border-radius: 12px;
-    margin-top: 2rem;
-}
-
-/* Style links */
-a {
-    color: #2575fc;
-    text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: none;
 }
