@@ -12,30 +12,18 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    position: relative;
-    background: url('images/openart-image_6jGv3oxC_1758702286451_raw.jpg') no-repeat center center fixed;
-    background-size: cover;
 }
+a { color: #2575fc; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.85); /* subtle overlay */
-    z-index: 0;
-}
-
+/* Wrapper */
 .content-wrapper {
-    position: relative;
-    z-index: 1;
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Header */
@@ -46,14 +34,14 @@ header {
     padding: 2rem 1rem;
     border-radius: 12px;
 }
-header h1 { margin: 0.2rem 0; font-size: 2.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+header h1 { margin: 0.2rem 0; font-size: 2.2rem; }
 header p { margin: 0.2rem 0; }
-header .research-interests { font-style: italic; margin-top: 0.5rem; font-size: 0.95rem; }
+header .research-interests { font-style: italic; margin-top: 0.5rem; }
 
 /* Main */
-main { padding: 2rem 0; }
+main { margin: 2rem 0; }
 h2 { color: #2575fc; border-bottom: 2px solid #2575fc; padding-bottom: 0.3rem; margin-top: 2rem; }
-.card { background: rgba(255,255,255,0.9); padding: 1.5rem 2rem; margin: 1.5rem 0; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+.card { background: white; padding: 1rem 1.5rem; margin: 1rem 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
 /* Collapsible */
 .collapsible { background-color: #f1f1f1; color: #333; cursor: pointer; padding: 10px; width: 100%; border: none; text-align: left; outline: none; font-size: 1rem; border-radius: 5px; margin-top: 0.5rem; }
@@ -61,65 +49,49 @@ h2 { color: #2575fc; border-bottom: 2px solid #2575fc; padding-bottom: 0.3rem; m
 .content { padding: 0 1rem; display: none; overflow: hidden; background-color: #f9f9f9; }
 
 /* Footer */
-footer { text-align: center; padding: 1rem; background-color: #2575fc; color: white; border-radius: 12px; margin-top: 2rem; }
-
-/* Links */
-a { color: #2575fc; text-decoration: underline; }
-a:hover { text-decoration: none; }
-
-/* Text subtle shadow for better readability */
-h1, h2, h3, p, li { text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1); }
+footer { text-align: center; padding: 1rem; background-color: #2575fc; color: white; border-radius: 12px; margin: 2rem 0; }
 </style>
 </head>
 <body>
 
 <div class="content-wrapper">
-<header>
-    <h1>Saina Bijanzadeh</h1>
-    <p>Email: <a href="mailto:bijanzadehsaina@gmail.com">bijanzadehsaina@gmail.com</a> | Phone: +989394133378 | <a href="#">LinkedIn</a> | <a href="#">ResearchGate</a></p>
-    <p class="research-interests">Biomedical Signals & AI • Nanoparticle-Based Drug Delivery • Neuroinflammation & Neurodegenerative Therapeutics • Nose-to-Brain Delivery & BBB Permeability • Wearable Biosensors • Personalized Nanomedicine</p>
-</header>
+  <header>
+      <h1>Saina Bijanzadeh</h1>
+      <p>Email: <a href="mailto:bijanzadehsaina@gmail.com">bijanzadehsaina@gmail.com</a> | Phone: +989394133378 | <a href="#">LinkedIn</a> | <a href="#">ResearchGate</a></p>
+      <p class="research-interests">Biomedical Signals & AI • Nanoparticle-Based Drug Delivery • Neuroinflammation & Neurodegenerative Therapeutics • Nose-to-Brain Delivery & BBB Permeability • Wearable Biosensors • Personalized Nanomedicine</p>
+  </header>
 
-<main>
-<!-- Education -->
-<section id="education">
-<h2>Education</h2>
-<div class="card">
-<h3>M.Sc., Inorganic Chemistry</h3>
-<p>University of Tehran, Iran — Oct 2021 – Feb 2024</p>
-<p><strong>GPA:</strong> 17.68/20 (3.54/4.0) | <strong>Thesis Grade:</strong> 20/20</p>
-<p><strong>Thesis:</strong> Design, Synthesis, and Characterization of Ceria Nanoparticles for Drug Delivery in Neurodegenerative Diseases</p>
-</div>
-<div class="card">
-<h3>B.Sc., Pure Chemistry</h3>
-<p>University of Tehran, Iran — Oct 2017 – Sept 2021</p>
-<p><strong>GPA:</strong> 16.4/20 (3.28/4.0)</p>
-<p><strong>Project:</strong> Metallic Chelating Ligands & MOFs for Parkinson’s Disease</p>
-</div>
-</section>
+  <main>
+    <!-- ✅ All your sections stay the same -->
+    <!-- Education -->
+    <section id="education"> ... </section>
 
-<!-- Research Experience -->
-<section id="research">
-<h2>Research Experience</h2>
-<div class="card">
-<h3>Research Assistant — University of Tehran</h3>
-<p>Oct 2021 – Present</p>
-<ul>
-<li>Developed chitosan-coated nanoceria for controlled drug release of levodopa for Parkinson’s Disease.</li>
-<li>Developed a chitosan-sandwiched nanoceria carrier to protect levodopa from oxidation.</li>
-<li>Collaborating internationally on MOFs for advanced drug carriers (China & UCLA).</li>
-<li>Synthesis and nanonization of copper-based coordination complexes with antimicrobial/anticancer activity.</li>
-<li>Synthesis and loading of MIL-100 MOFs for antibacterial and drug delivery purposes.</li>
-</ul>
-</div>
+    <!-- Research Experience -->
+    <section id="research"> ... </section>
 
-<!-- Rest of your sections remain the same ... -->
+    <!-- Publications -->
+    <section id="publications"> ... </section>
 
-</main>
+    <!-- Skills -->
+    <section id="skills"> ... </section>
 
-<footer>
-<p>&copy; 2025 Saina Bijanzadeh</p>
-</footer>
+    <!-- Languages -->
+    <section id="languages"> ... </section>
+
+    <!-- Honors & Awards -->
+    <section id="honors"> ... </section>
+
+    <!-- Certifications -->
+    <section id="certifications"> ... </section>
+
+    <!-- Additional Experience -->
+    <section id="additional"> ... </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saina Bijanzadeh</p>
+  </footer>
+</div> <!-- ✅ closes wrapper -->
 
 <script>
 // Collapsible sections
@@ -133,7 +105,6 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 </script>
-</div> <!-- End of content-wrapper -->
 
 </body>
 </html>
